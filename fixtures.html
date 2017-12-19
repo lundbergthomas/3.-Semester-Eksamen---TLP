@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Fixtures</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/flexboxgrid.css">
+	<link rel="stylesheet" href="css/fixtures.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+	<header id="main-header">
+		<div class="container">
+			<div class="row end-sm end-md end-lg center-xs middle-xs middle-sm middle-md middle-lg"> <!-- Dette er hele rækken, som indeholder 2 kolonner. En på 2 og en på 10
+								En Row floater alt! HUUUUUUSSSSSK!!! AT SÆTTE CENTER-XS IND PÅ ALLE UNDERSIDER--> 
+				<div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+					<h1>Chelsea</h1>
+				</div>
+				<div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
+					<nav id="navbar">
+						<div class="toggle">
+							<i class="fa fa-bars menu" aria-hidden="true"></i>
+						</div>
+						<ul>
+							<li><a href="index.php">Home</a></li>
+							<li><a href="membership.php">Membership</a></li>
+							<li class="current"><a href="fixtures.html">Fixtures</a></li>
+							<li><a href="tickets.html">Tickets</a></li>
+						</ul>
+					</nav>
+					<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+					<script type="text/javascript">
+						$(document).ready(function(){
+							$('.menu').click(Function(){
+											 $('#navbar').toggleClass('active');
+											 })
+						})
+					</script>
+				</div>
+			</div>
+		</div>
+	</header>
+	
+	<!--- HEADER TEXT -->
+	<section id="headertext">
+		<div class="container">
+			<div class="row start-sm start-md start-lg center-xs middle-xs middle-sm middle-md middle-lg">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<h1><span class="firstteam">First Team</span> Fixtures 2017/18</h1>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<!-- NEXT MATCH HEADER -->
+	<section id="nextmatch">
+		
+	</section>
+	
+	<!-- FIXTURES LIST -->
+	<section id="fixtures">
+		<div class="container">
+			<div class="row center-xs center-sm center-md center-lg">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 fixture">
+					<img class="desktop" src="images/fixtures_match1.jpg" alt="fixture">
+					<img class="mobile" src="images/mobilematch1.jpg" alt="fixture"><p><a href="membership.php">Membership Advantages</a></p>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 fixture">
+					<img class="desktop" src="images/fixtures_match2.jpg" alt="fixture">
+					<img class="mobile" src="images/mobilematch2.jpg" alt="fixture"><p><a href="membership.php">Membership Advantages</a></p>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 fixture">
+					<img class="desktop" src="images/fixtures_match3.jpg" alt="fixture">
+					<img class="mobile" src="images/mobilematch3.jpg" alt="fixture"><p><a href="membership.php">Membership Advantages</a></p>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 fixture">
+					<img class="desktop" src="images/fixtures_match4.jpg" alt="fixture">
+					<img class="mobile" src="images/mobilematch4.jpg" alt="fixture"><p><a href="membership.php">Membership Advantages</a></p>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 fixture">
+					<img class="desktop" src="images/fixtures_match5.jpg" alt="fixture">
+					<img class="mobile" src="images/mobilematch5.jpg" alt="fixture"><p><a href="membership.php">Membership Advantages</a></p>
+				</div>
+			</div>
+		</div>
+	</section>
+		<footer>
+		<div class="container">
+			<div class="row center-xs start-sm start-md start-lg middle-xs middle-sm middle-md middle-lg">
+				<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+					<h3>Chelsea Football Club</h3>
+					<p>Fulham Rd, Fulham, London SW6 1HS, Storbritannien</p>
+					<p>School Project</p>
+				</div>
+				<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+					<p>&#169;Thomas Lundberg Pallesen</p>
+				</div>
+				<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+					<img src="images/nike.png">
+				</div>
+			</div>
+		</div>	
+	</footer>
+</body>
+</html>

@@ -1,0 +1,167 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* RESET */
+
+body {
+	font-family: 'Poppins', sans-serif;
+	font-size: 16px;
+	line-height: 1.5em;
+	margin: 0;
+	padding: 0;
+
+}
+
+img {
+	width: 100%;
+}
+
+.container{
+	margin: auto;
+}
+
+.primary-text {
+	color: #4183d7;
+}
+
+/* HEADER */
+#main-header{
+	border-bottom: 1px solid #3498DB;
+	background: #0f61a8;
+}
+
+/* NAVBAR */
+#navbar{
+	text-transform: uppercase;
+	
+	
+}
+#navbar li {
+	display: inline;
+	padding-right: 20px;
+	list-style: none;
+}
+#navbar a {
+	text-decoration: none;
+	color: white;
+}
+#navbar li.current a, #navbar a:hover{
+	color: #f5d03f;
+	border-bottom: 3px solid #f5d03f;
+	padding-bottom: 3px;
+}
+#main-header h1 {
+	color: white;
+}
+
+/*HAMBURGER MENU*/
+.toggle {
+	width: 100%;
+	padding: 10px 20px;
+	background: #4183d7;
+	text-align: right;
+	box-sizing: border-box;
+	color: white;
+	font-size: 30px;
+	display: none;
+	
+}
+@media(max-width:800px){
+	.toggle{
+		display: block;
+	}
+	
+	#navbar
+	{
+		width: 100%;
+		background: #2C3E50;
+	
+	}
+	#navbar li
+	{
+		display: block;
+		text-align: center;
+		padding: 20px 0;
+	}
+	.active {
+		display: block;
+	}
+}
+/* STYLES AF FIXTURES */
+
+#headertext h1 .firstteam {
+	color: #0f61a8;
+	font-weight: 700;
+	font-size: 30px;
+}
+
+
+#nextmatch {
+	background:url(../images/fixtures_nextmatch.jpg) no-repeat center center;
+	height: 500px;
+	margin-bottom: 30px;
+	
+}
+
+@media(max-width:800px){
+	#nextmatch {
+		background:url(../images/mobilenextmatch.jpg) no-repeat center center;
+	}
+}
+
+/*FIXTURES LIST */
+#fixtures .mobile {
+	display: none;
+}
+#fixtures img {
+-webkit-box-shadow: -3px -2px 5px 0px rgba(50, 50, 50, 0.56);
+-moz-box-shadow:    -3px -2px 5px 0px rgba(50, 50, 50, 0.56);
+box-shadow:         -3px -2px 5px 0px rgba(50, 50, 50, 0.56);
+}
+
+#fixtures p {
+	padding: 10px 20px;
+-webkit-box-shadow: 0px 2px 5px 0px rgba(50, 50, 50, 0.56);
+-moz-box-shadow:    0px 2px 5px 0px rgba(50, 50, 50, 0.56);
+box-shadow:         0px 2px 5px 0px rgba(50, 50, 50, 0.56);
+	margin-top: -5px;
+	background: #fff;
+
+}
+#fixtures a {
+	text-decoration: none;
+	background-color: #0f61a8;
+	padding: 5px 20px;
+	color: white;
+	
+}
+#fixtures a:hover{
+	background: #22303f;
+	color: #f5d03f;
+}
+
+.fixture {
+	margin-bottom: 20px;
+}
+
+
+
+@media(max-width: 800px){
+	#fixtures .mobile {
+		display: block;
+		
+	}
+	#fixtures .desktop {
+		display: none;
+	}
+}
+
+/* FOOTER */ 
+footer {
+	background: #0f61a8;
+	color: white;
+	padding: 50px;
+}
+footer img {
+	width: 100px;
+}

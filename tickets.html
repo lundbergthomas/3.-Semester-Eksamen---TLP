@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Fixtures</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/flexboxgrid.css">
+	<link rel="stylesheet" href="css/tickets.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+	<header id="main-header">
+		<div class="container">
+			<div class="row end-sm end-md end-lg center-xs middle-xs middle-sm middle-md middle-lg"> <!-- Dette er hele rækken, som indeholder 2 kolonner. En på 2 og en på 10
+								En Row floater alt! HUUUUUUSSSSSK!!! AT SÆTTE CENTER-XS IND PÅ ALLE UNDERSIDER--> 
+				<div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+					<h1>Chelsea</h1>
+				</div>
+				<div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
+					<nav id="navbar">
+						<div class="toggle">
+							<i class="fa fa-bars menu" aria-hidden="true"></i>
+						</div>
+						<ul>
+							<li><a href="index.php">Home</a></li>
+							<li><a href="membership.php">Membership</a></li>
+							<li><a href="fixtures.html">Fixtures</a></li>
+							<li class="current"><a href="tickets.html">Tickets</a></li>
+						</ul>
+					</nav>
+					<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+					<script type="text/javascript">
+						$(document).ready(function(){
+							$('.menu').click(Function(){
+											 $('#navbar').toggleClass('active');
+											 })
+						})
+					</script>
+				</div>
+			</div>
+		</div>
+	</header>
+	
+	<!--- TOP --->
+	<section id="top">
+		<div class="container">
+			<div class="row center-xs center-sm center-md center-lg middle-xs middle-sm middle-md middle-lg">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 textbox">
+					<h1>TICKETS AND STADIUM OVERVIEW</h1>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<h4>Based on ticket sales for Chelsea home games over recent seasons, it is unlikely that during the 2017/18 season many tickets will go on general sale.  In order to give yourself the best opportunity to purchase match tickets, we would advise supporters to become a Chelsea member</h4>
+				</div>
+			</div>
+			<div class="row center-xs center-sm center-md center-lg middle-xs middle-sm middle-md middle-lg">
+				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+					<h2> <a href="membership.php"> Become A Member</a></h2>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<!-- STADIUM OVERVIEW -->
+	<section id="stadium">
+		<div class="container">
+			<div class="row center-xs center-sm center-md center-lg middle-xs middle-sm middle-md middle-lg">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<img src="images/stadiummap.jpg" alt="stadiummap">
+				</div>
+			</div>
+		</div>
+	</section>
+	
+
+
+</body>
+</html>

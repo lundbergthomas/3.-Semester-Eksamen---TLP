@@ -1,0 +1,359 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* RESET */
+
+body {
+	font-family: 'Poppins', sans-serif;
+	font-size: 16px;
+	line-height: 1.5em;
+	margin: 0;
+	padding: 0;
+	background: #FBFBF3;
+
+}
+
+img {
+	width: 100%;
+}
+
+.container{
+	margin: auto;
+}
+/* HEADER */
+#main-header{
+	border-bottom: 1px solid #3498DB;
+	background: #0f61a8;
+}
+
+/* NAVBAR */
+#navbar{
+	text-transform: uppercase;
+	
+	
+}
+#navbar li {
+	display: inline;
+	padding-right: 20px;
+	list-style: none;
+}
+#navbar a {
+	text-decoration: none;
+	color: white;
+}
+#navbar li.current a, #navbar a:hover{
+	color: #f5d03f;
+	border-bottom: 3px solid #f5d03f;
+	padding-bottom: 3px;
+}
+#main-header h1 {
+	color: white;
+}
+
+/*HAMBURGER MENU*/
+.toggle {
+	width: 100%;
+	padding: 10px 20px;
+	background: #4183d7;
+	text-align: right;
+	box-sizing: border-box;
+	color: white;
+	font-size: 30px;
+	display: none;
+	
+}
+@media(max-width:800px){
+	.toggle{
+		display: block;
+	}
+	
+	#navbar
+	{
+		width: 100%;
+		background: #2C3E50;
+	
+	}
+	#navbar li
+	{
+		display: block;
+		text-align: center;
+		padding: 20px 0;
+	}
+	.active {
+		display: block;
+	}
+}
+
+
+/* STYLES AF TOP SECTION */
+#top {
+	background:url(../images/usertopbg.jpg) no-repeat center center;
+	height: 800px;
+}
+#top h1 {
+	margin-top: 150px;
+	color: white;
+	line-height: 100px;
+	font-size: 70px
+}
+#top h1 .yourchelsea {
+	font-size: 120px;
+	font-weight: 2000;	
+}
+
+#top .logout{
+	margin-top: 50px;
+}
+
+#top h3{
+	color: white;
+	opacity: 0.6;
+}
+#top button{
+	padding: 10px 90px;
+	opacity: 0.6;
+}
+
+@media(max-width:800px){
+	#top h1 {
+		font-size: 30px;
+		line-height: 60px;
+	}
+	#top h1 .yourchelsea {
+		font-size: 60px;
+	}
+}
+@media(max-width:480px){
+	#top h1 {
+		font-size: 30px;
+		line-height: 60px;
+	}
+	#top h1 .yourchelsea {
+		font-size: 50px;
+	}
+}
+
+/* STYLES AF INCLUDES */
+#includes {
+	padding: 60px 0px;
+}
+
+h1 {
+	color: #22303f;
+	font-size: 60px;
+}
+h3 {
+	color: #22303f;
+	font-size: 30px;
+}
+.fa {
+	color: #0f61a8;
+}
+#includes h2 {
+	color: #0f61a8;
+}
+.row1 {
+	margin-bottom: 50px;
+}
+@media(max-width:800px){
+	#includes h1 {
+		font-size: 50px;
+	}
+	#includes h3 {
+		font-size: 25px;
+	}
+}
+@media(max-width:480px){
+	#includes h1 {
+		font-size: 30px;
+	}
+	#includes h3 {
+		font-size: 20px;
+	}
+}
+
+/* MATCH PREVIEW STYLES */
+#matchpreview {
+	padding: 60px 0;
+	background:url(../images/matchpreviewbg.jpg) no-repeat center center;
+}
+#matchpreview h1 {
+	color: #f5d03f;
+}
+#matchpreview img {
+	margin-bottom: 50px;
+}
+#matchpreview iframe {
+	height: 600px;
+}
+#matchpreview h4{
+	color: white;
+	font-size: 30px;
+}
+@media(max-width:768px){
+	#matchpreview h1 {
+		font-size: 40px;
+	}
+	#matchpreview h4 {
+		font-size: 20px;
+	}
+	#matchpreview iframe {
+	height: 300px;
+}
+}
+
+/* MATCH REVIEWS STYLES */
+#matchreview {
+	margin-top: 100px;
+	background: #22303f;
+	height: 100%;
+	padding: 40px 0;
+
+}
+
+#matchreview img {
+	margin-bottom: 40px;
+}
+
+
+#matchreview iframe {
+
+}
+
+#matchreview h1 {
+	color: #f5d03f;
+	font-weight: 200;
+}
+#matchreview h2 {
+	color: white;
+	font-weight: 200;
+}
+@media(max-width:768px){
+	#matchreview h1 {
+	color: #f5d03f;
+	font-weight: 200;
+	font-size: 40px;
+	}
+}
+/* STYLES AF YOUR MATCH DAY */
+#yourmd {
+	background:url(../images/yourmdbg.jpg) no-repeat center center;
+	padding: 20px 0;
+}
+#yourmd .fa {
+	color: #0f61a8;
+}
+
+#yourmd .locationtext1 {
+	font-family: 'Poppins', sans-serif;
+	font-size: 40px;
+	color: #2C3E50;
+	font-weight: bold;
+}
+#yourmd .locationtext2 {
+	font-family: 'Poppins', sans-serif;
+	font-size: 40px;
+	color: #0f61a8;
+	font-weight: bold;
+}
+#yourmd .location {
+	margin-bottom: 40px;
+}
+@media(max-width: 768px){
+	#yourmd h1 {
+		font-size: 40px;	
+	}
+	#yourmd .fa {
+		font-size: 3	0px;
+	}
+	#yourmd .locationtext1 {
+		font-size: 20px;
+	}
+	#yourmd .locationtext2 {
+		font-size: 20px;
+	}
+}
+
+/* STYLES AF DID YOU KNOW */
+#didyouknow {
+	background: #2C3E50;
+	padding: 40px 0;
+}
+#didyouknow h1 {
+	color: #f5d03f;
+	font-weight: bold;
+	font-size: 60px;
+}
+#didyouknow h3 {
+	color: #f5d03f;
+	font-size: 30px;
+	line-height: 40px;
+}
+#didyouknow .location {
+	font-size: 20px;
+}
+@media(max-width: 768px){
+	#didyouknow h1 {
+		font-size: 40px;
+	}
+	#didyouknow h3 {
+		font-size: 20px;
+		line-height: 25px;
+	}
+}
+
+/* STYLES AF TICKETS */
+#tickets {
+	padding: 40px 0;
+}
+
+#tickets .box1 {
+	background: #DADFE1;
+	padding: 30px 10px;
+	width: 40px;
+	-webkit-box-shadow: -4px 2px 5px 0px rgba(50, 50, 50, 0.56);
+-moz-box-shadow:    -4px 2px 5px 0px rgba(50, 50, 50, 0.56);
+box-shadow:         -4px 2px 5px 0px rgba(50, 50, 50, 0.56);
+	text-align: center;	
+	
+}
+#tickets h2 {
+	font-size: 30px;
+}
+#tickets h3 {
+	font-size: 20px;
+	font-weight: bold;
+}
+#tickets .shedend {
+	margin-right: 30px;
+}
+#tickets .mh {
+	margin-right: 30px;
+}
+#tickets .eaststand {
+	margin-right: 10px;
+}
+#tickets .mh h2 {
+	font-size: 30px;
+}
+@media(max-width: 768px){
+	#tickets h1 {
+		font-size: 40px;
+	}
+	#tickets .shedend {
+	margin-bottom: 10px;	
+	}
+	#tickets .mh {
+	margin-bottom: 10px;	
+	}
+}
+
+/* FOOTER */ 
+footer {
+	background: #0f61a8;
+	color: white;
+	padding: 50px;
+}
+footer img {
+	width: 100px;
+}
